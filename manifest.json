@@ -8,6 +8,6 @@
   ],
   "issue_tracker": "https://github.com/sarabanjina/mycomfort/issues",
   "requirements": [],
-  "config_flow": true,
-  "version": "1.0.0"
+  "config_flow": false,
+  "version": "0.0.1"
 }
