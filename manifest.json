@@ -1,0 +1,13 @@
+{
+  "domain": "mycomfort",
+  "name": "myComfort Windhager integration",
+  "documentation": "https://github.com/sarabanjina/mycomfort",
+  "dependencies": [],
+  "codeowners": [
+    "@sarabanjina"
+  ],
+  "issue_tracker": "https://github.com/sarabanjina/mycomfort/issues",
+  "requirements": [],
+  "config_flow": true,
+  "version": "1.0.0"
+}
