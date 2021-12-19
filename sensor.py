@@ -272,6 +272,6 @@ class myComfortSensor(Entity):
         try:
             self._state = self._sensor[CONF_GETTER](self._api)
         except requests.exceptions.ConnectionError:
-            _LOGGER.error("Unable to retrieve data from myComfort gateway")
+            logger.error("Unable to retrieve data from myComfort gateway")
         except ValueError:
-            _LOGGER.error("Unable to decode data from myComfort gateway")
+            logger.error("Unable to decode data from myComfort gateway")
