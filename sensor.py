@@ -95,14 +95,14 @@ SENSOR_TYPES = {
         CONF_NAME: "Pellet consumption since bulk fill",
         CONF_ICON: "mdi:power",
         CONF_UNIT_OF_MEASUREMENT: MASS_KILOGRAMS,
-        CONF_GETTER: lambda api: api.getBoilerConsumptionBulkfill(),
+        CONF_GETTER: lambda api: float(api.getBoilerConsumptionBulkfill()) * 1000,
         CONF_DEVICE_CLASS: None,
     },
     SENSOR_BOILER_CONSUMPTION_TOTAL: {
         CONF_NAME: "Pellet consumption total",
         CONF_ICON: "mdi:power",
         CONF_UNIT_OF_MEASUREMENT: MASS_KILOGRAMS,
-        CONF_GETTER: lambda api: api.getBoilerConsumptionTotal(),
+        CONF_GETTER: lambda api: float(api.getBoilerConsumptionTotal()) * 1000,
         CONF_DEVICE_CLASS: None,
     },
     SENSOR_BOILER_TIME_CLEANING: {
